@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<!-- <body> -->
+<!-- Write a function called isOdd that receives 1 parameter:
+
+A Number
+And returns a Promise
+
+In this function, determine if the number is odd
+If so, resolve the promise with a value of true
+Otherwise, reject it with a value of false
+Create an array of numbers.
+
+Iterate the array with a for loop
+At each iteration, call isOdd function with the number
+console.log() the number and the words ‘isOdd  .’ if the number is even
+Do nothing if it is even
+Remember, you will be calling a promise function, so handle the “returned” values properly
+2.  Write an asynchronous function - resolve
+Write function called getRandomCharacter that returns a promise
+In the promise, write a setTimeout() that will resolve the promise with a random character after 500ms
+Invokes the getRandomCharacter function, awaiting the random character, and printing that to the console.
+3.  Write an asynchronous function  - reject
+
+Write function called getData that returns a promise
+In the promise, write a setTimeout() that will reject the promise with a random value after 500ms
+Invokes the getData  function, awaiting the random character, and printing that to the console.
+4.  Write an asynchronous function  - reject + resolve
+
+Write function called rejectResolve that returns a promise
+In the promise, write a loop that will call settimeout twice. One to reject and one to resolve the promise with a random value after 500ms
+Invokes the getData  function, awaiting the random character, and printing that to the console (both for reject and resolve)
+</body> -->
+<script>
+    function isOdd(number) {
+  document.getElementById("lab").innerHTML = number;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+  
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+</script>
